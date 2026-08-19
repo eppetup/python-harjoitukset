@@ -1,5 +1,5 @@
-**************************************
-**Ohjelmisto 1 - Python harjoitukset**
-**************************************
-Elias Tuohimaa
-Moduuli 1
+::::::::::::::::::::::::::::::::::::::
+::ohjelmisto 1 - python harjoitukset::
+::elias tuohimaa                    ::
+::::::::::::::::::::::::::::::::::::::
+moduuli 1

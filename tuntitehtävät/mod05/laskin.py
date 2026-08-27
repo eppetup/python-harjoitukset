@@ -13,7 +13,7 @@ while(True):
     if toiminto == "plus":
         print(f"\n{luku1} + {luku2} = {luku1 + luku2}\n")
     if toiminto == "miinus":
-            print(f"\n{luku1} - {luku2} = {luku1 - luku2}\n")    
+        print(f"\n{luku1} - {luku2} = {luku1 - luku2}\n")    
     if toiminto == "kerto":
-                print(f"\n{luku1} * {luku2} = {luku1 * luku2}\n") 
+        print(f"\n{luku1} * {luku2} = {luku1 * luku2}\n") 
 

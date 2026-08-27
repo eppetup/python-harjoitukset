@@ -6,7 +6,6 @@ naulat += leiviskat * 20
 luodit += naulat * 32
 grammat = luodit * 13.3
 
-print(grammat)
 kilogrammat = int(grammat // 1000)
 grammat = grammat % 1000
 

@@ -26,3 +26,5 @@ Moduuli 5
 Moduuli 6
   tehtävä 1
   tehtävä 2
+  tehtävä 3
+  tehtävä 4

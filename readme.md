@@ -32,3 +32,5 @@ Moduuli 7
   tehtävä 1
   tehtävä 2
   tehtävä 3
+  tehtävä 4
+  tehtävä 5

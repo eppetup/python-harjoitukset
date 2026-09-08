@@ -1,38 +1,39 @@
-Ohjelmisto 1 - Python harjoitukset
+Ohjelmisto 1 - Python harjoitukset  
 
-Elias Tuohimaa
+Elias Tuohimaa  
 
-Moduuli 1 & 2
-  tehtävä 1
+Moduuli 1 & 2  
+  tehtävä 1  
 Moduuli 3
-  tehtävä 1
-  tehtävä 2
-  tehtävä 3
-  tehtävä 4
-  tehtävä 5
-  tehtävä 6
-Moduuli 4
-  tehtävä 1
-  tehtävä 2
-  tehtävä 3
-  tehtävä 4
-Moduuli 5
-  tehtävä 1
-  tehtävä 2
-  tehtävä 3
-  tehtävä 4
-  tehtävä 5
-  tehtävä 6
-Moduuli 6
-  tehtävä 1
-  tehtävä 2
-  tehtävä 3
-  tehtävä 4
-Moduuli 7
-  tehtävä 1
-  tehtävä 2
-  tehtävä 3
-  tehtävä 4
-  tehtävä 5
-  tehtävä 6
+  tehtävä 1  
+  tehtävä 2   
+  tehtävä 3  
+  tehtävä 4  
+  tehtävä 5  
+  tehtävä 6  
+Moduuli 4  
+  tehtävä 1  
+  tehtävä 2  
+  tehtävä 3  
+  tehtävä 4  
+Moduuli 5  
+  tehtävä 1  
+  tehtävä 2  
+  tehtävä 3  
+  tehtävä 4  
+  tehtävä 5  
+  tehtävä 6    
+Moduuli 6  
+  tehtävä 1  
+  tehtävä 2  
+  tehtävä 3  
+  tehtävä 4  
+Moduuli 7  
+  tehtävä 1    
+  tehtävä 2  
+  tehtävä 3  
+  tehtävä 4  
+  tehtävä 5  
+  tehtävä 6  
+
   

@@ -36,16 +36,16 @@ class Kilpailu:
              x.kulje(1)
 
     def tulosta_tilanne(self):
-        rekisteritunnukset = "Rekisteritunnukset: "
-        huippunopeudet = "Huippunopeudet: "
+        rekisteritunnukset = "Rekisteritunnukset:     "
+        huippunopeudet = "Huippunopeudet:         "
         tamanhetkisetNopeudet = "Tämänhetkiset nopeudet: "
-        kuljetutMatkat = "Kuljetut matkat: "
+        kuljetutMatkat = "Kuljetut matkat:        "
 
         for x in self.autot:
             rekisteritunnukset += str(x.rekisteritunnus) + " "
-            huippunopeudet += str(x.huippunopeus) + " "
-            tamanhetkisetNopeudet += str(x.tamanhetkinenNopeus) + " "
-            kuljetutMatkat += str(x.kuljettuMatka) + " "
+            huippunopeudet += str(x.huippunopeus) + "   "
+            tamanhetkisetNopeudet += str(x.tamanhetkinenNopeus) + "   "
+            kuljetutMatkat += str(x.kuljettuMatka) + "  "
 
         print (rekisteritunnukset)
         print (huippunopeudet)

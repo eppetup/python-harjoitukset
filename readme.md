@@ -40,6 +40,7 @@ Moduuli 8
   tehtävä 2  
   tehtävä 3  
 Moduuli 9  
-  tehtava 1  
-  tehtava 2  
-  
+  tehtävä 1  
+  tehtävä 2  
+  tehtävä 3  
+  tehtävä 4    

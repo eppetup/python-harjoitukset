@@ -17,6 +17,10 @@ class Auto:
 
         self.tamanhetkinenNopeus += nopeudenMuutos
 
+    def kulje(self, tunnit):
+
+        self.kuljettuMatka += tunnit * self.tamanhetkinenNopeus
+
 
 # main
 uusiAuto = Auto("ABC-123", 142)
@@ -35,3 +39,9 @@ print(f"tämänhetkinen nopeus: {uusiAuto.tamanhetkinenNopeus} km/h")
 # hätäjarrutus
 uusiAuto.kiihdyta(-200)
 print(f"tämänhetkinen nopeus: {uusiAuto.tamanhetkinenNopeus} km/h")
+
+# kulje test
+uusiAuto.kuljettuMatka = 2000
+uusiAuto.tamanhetkinenNopeus = 60
+uusiAuto.kulje(1.5)
+print(f"kuljettu matka: {uusiAuto.kuljettuMatka} km")

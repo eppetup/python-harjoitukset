@@ -5,12 +5,10 @@ class Hissi:
         self.kerrosNyt = alin
 
     def siirry_kerrokseen(self, kerros):
-        if (self.kerrosNyt < kerros):
-            for x in range (kerros - self.kerrosNyt):
-                self.kerros_ylös()
-        if (self.kerrosNyt > kerros):
-             for x in range (self.kerrosNyt - kerros):
-                 self.kerros_alas()       
+        while(self.kerrosNyt < kerros):
+            self.kerros_ylös()
+        while(self.kerrosNyt > kerros):
+            self.kerros_alas()      
             
     def kerros_ylös(self):
         self.kerrosNyt += 1

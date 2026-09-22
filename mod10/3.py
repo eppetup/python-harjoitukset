@@ -8,7 +8,7 @@ class Hissi:
         while(self.kerrosNyt < kerros):
             self.kerros_ylös()
         while(self.kerrosNyt > kerros):
-            self.kerros_alas()        
+            self.kerros_alas()       
             
     def kerros_ylös(self):
         self.kerrosNyt += 1
@@ -26,10 +26,15 @@ class Talo:
             self.hissit.append(Hissi(alin, ylin))
     def aja_hissiä(self, hissi, kerros):
         self.hissit[hissi].siirry_kerrokseen(kerros)
+    def palohalytys(self):
+        for x in self.hissit:
+          x.siirry_kerrokseen(self.alin)
+
 
 
 # main
 talo = Talo(1,10,4)
 talo.aja_hissiä(1,4)
 talo.aja_hissiä(2,5)
-talo.aja_hissiä(1,1)
+
+talo.palohalytys()

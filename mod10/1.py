@@ -22,4 +22,4 @@ class Hissi:
 # main
 hissi = Hissi(1,10)
 hissi.siirry_kerrokseen(4)
-hissi.siirry_kerrokseen(2)
+hissi.siirry_kerrokseen(1)

@@ -46,3 +46,5 @@ Moduuli 9
   tehtävä 4    
 Moduuli 10  
   tehtävä 1  
+  tehtävä 2  
+  

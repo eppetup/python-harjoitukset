@@ -1,27 +1,26 @@
-def pelaa(lista):
-    lista.append(input('Syötä sana > '))
-    return
+import funktiot
+import luokat
 
-def tulokset(lista):
-    print(lista)
-    return
+funktiot.alaikatest()
 
-def asetukset():
-    print('Työn alla')
-    return
+# esineet
+vasara = luokat.Esine("Vasara", 4)
+taskulamppu = luokat.Esine("Taskulamppu", 2)
+kirja = luokat.Esine("Kirja", 1)
 
-def lopeta():
-    quit()
+# huoneet
+huone1 = luokat.Huone("1. huone", vasara)
+huone2 = luokat.Huone("2. huone", kirja)
+huone3 = luokat.Huone("3. huone", taskulamppu)
+
+huone1.seuraava = huone2
+huone2.seuraava = huone3
+huone3.seuraava = huone1
 
 
 
 nimi = input('Pelaajan nimi > ')
-ika = input('Pelaajan ikä > ')
-
-if int(ika) < 12:
-    print('Alaikä')
-    quit()
-
+pelaaja = luokat.Pelaaja(nimi, huone1)
 
 lista = []
 
@@ -35,10 +34,10 @@ while(True):
 
     match syote:
         case 'pelaa':
-            pelaa(lista)
+            funktiot.pelaa(lista, pelaaja)
         case 'tulokset':
-            tulokset(lista)
+            funktiot.tulokset(lista)
         case 'asetukset':
-            asetukset()
+            funktiot.asetukset()
         case 'lopeta':
-            lopeta()
+            funktiot.lopeta()

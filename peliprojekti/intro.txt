@@ -1,0 +1,11 @@
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::  Hei. Tämä on peli, jossa seikkaillaan huoneissa.             ::
+::                                                               ::
+::  Huoneissa on erilaisia tavaroita, joita voi ottaa mukaasi.   ::
+::                                                               ::
+::  Onnea matkaan!                                               ::
+::                                                               ::
+::  (Paina mitä tahansa nappia jatkaaksesi)                      ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

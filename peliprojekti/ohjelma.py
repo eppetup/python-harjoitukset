@@ -2,6 +2,10 @@ import funktiot
 import luokat
 
 funktiot.alaikatest()
+funktiot.tulostaIntro()
+input()
+funktiot.tulostaOhjeet()
+input()
 
 # esineet
 vasara = luokat.Esine("Vasara", 4)
@@ -17,10 +21,11 @@ huone1.seuraava = huone2
 huone2.seuraava = huone3
 huone3.seuraava = huone1
 
-
+huoneet = [huone1, huone2, huone3]
 
 nimi = input('Pelaajan nimi > ')
 pelaaja = luokat.Pelaaja(nimi, huone1)
+funktiot.lataaTallennus(pelaaja, huoneet)
 
 lista = []
 
@@ -28,13 +33,15 @@ while(True):
 
     print(f'\nHei {nimi}!')
     print('Valitse toiminto:')
-    print('\n  pelaa\n  tulokset\n  asetukset\n  lopeta\n')
+    print('\n  pelaa\n  tallenna\n  tulokset\n  asetukset\n  lopeta\n')
 
     syote = input('> ')
 
     match syote:
         case 'pelaa':
             funktiot.pelaa(lista, pelaaja)
+        case 'tallenna':
+            funktiot.tallenna(pelaaja)
         case 'tulokset':
             funktiot.tulokset(lista)
         case 'asetukset':

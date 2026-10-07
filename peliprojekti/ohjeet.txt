@@ -2,7 +2,7 @@ Ohjeet:
 
 Kun ruudulla näkyy ">", odotetaan pelaajalta syötettä.
 
-Päävalikon toimintoja ovat "pelaa", "tallenna", "tulokset", "asetukset" ja "lopeta".
+Päävalikon toimintoja ovat "pelaa", "tallenna", "historia", "asetukset" ja "lopeta".
 
 pelaa: käynnistää pelin  
 tallenna: tallentaa pelin tilanteen  

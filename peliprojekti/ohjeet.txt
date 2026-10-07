@@ -4,18 +4,18 @@ Kun ruudulla näkyy ">", odotetaan pelaajalta syötettä.
 
 Päävalikon toimintoja ovat "pelaa", "tallenna", "tulokset", "asetukset" ja "lopeta".
 
-pelaa: käynnistää pelin
-tallenna: tallentaa pelin tilanteen
-tulokset: tulostaa käyttäjän syöttämät toiminnot
-asetukset: pelin asetukset
-lopeta: lopettaa pelin
-
+pelaa: käynnistää pelin  
+tallenna: tallentaa pelin tilanteen  
+tulokset: tulostaa käyttäjän syöttämät toiminnot  
+asetukset: pelin asetukset  
+lopeta: lopettaa pelin  
+ 
 Pelissä kerätään tavaroita huoneista. 
-Pelin toimintoja ovat "liiku", "poimi esine", "tavarat", "valikko"
+Pelin toimintoja ovat "liiku", "poimi", "tavarat", "valikko"
 
 liiku: liiku seuraavaan huoneeseen
-poimi esine: poimi huoneesta esine
+poimi: poimi huoneesta esine
 tavarat: tulosta laukun sisältö
 valikko: palaa päävalikkoon
 
-Paina mitä tahansa nappia jatkaaksesi.
+Paina enter jatkaaksesi.

@@ -9,19 +9,22 @@ input()
 
 # esineet
 vasara = luokat.Esine("Vasara", 4)
-taskulamppu = luokat.Esine("Taskulamppu", 2)
+banaani = luokat.Esine("Banaani", 1)
 kirja = luokat.Esine("Kirja", 1)
+lappu = luokat.Esine("Lappu", 1)
 
-# huoneet
-huone1 = luokat.Huone("1. huone", vasara)
-huone2 = luokat.Huone("2. huone", kirja)
-huone3 = luokat.Huone("3. huone", taskulamppu)
+# paikat
+huone1 = luokat.Huone("kellari", vasara)
+huone2 = luokat.Huone("olohuone", kirja)
+huone3 = luokat.Huone("keittiö", banaani)
+huone4 = luokat.Huone("eteinen", lappu)
 
 huone1.seuraava = huone2
 huone2.seuraava = huone3
-huone3.seuraava = huone1
+huone3.seuraava = huone4
 
-huoneet = [huone1, huone2, huone3]
+esineet = [vasara, banaani, kirja, lappu]
+huoneet = [huone1, huone2, huone3, huone4]
 
 nimi = input('Pelaajan nimi > ')
 pelaaja = luokat.Pelaaja(nimi, huone1)
@@ -33,7 +36,7 @@ while(True):
 
     print(f'\nHei {nimi}!')
     print('Valitse toiminto:')
-    print('\n  pelaa\n  tallenna\n  tulokset\n  asetukset\n  lopeta\n')
+    print('\n  pelaa\n  tallenna\n  historia\n  asetukset\n  lopeta\n')
 
     syote = input('> ')
 
@@ -42,9 +45,9 @@ while(True):
             funktiot.pelaa(lista, pelaaja)
         case 'tallenna':
             funktiot.tallenna(pelaaja)
-        case 'tulokset':
-            funktiot.tulokset(lista)
+        case 'historia':
+            funktiot.historia(lista)
         case 'asetukset':
-            funktiot.asetukset()
+            funktiot.asetukset(pelaaja, huoneet, esineet)
         case 'lopeta':
             funktiot.lopeta()

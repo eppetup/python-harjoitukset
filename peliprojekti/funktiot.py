@@ -1,21 +1,24 @@
 import sys
 
+# testaa onko pelaaja riittävän vanha
 def alaikatest():
     ika = input('Pelaajan ikä > ')
     if int(ika) < 12:
         print('Alaikä')
         sys.exit()
 
+# tulostaa intro.txt
 def tulostaIntro():
     with open("intro.txt", 'r') as tiedosto:
         print(tiedosto.read())
 
+# tulostaa ohjeet.txt
 def tulostaOhjeet():
     with open("ohjeet.txt", 'r') as tiedosto:
         print(tiedosto.read())
 
 
-
+# pelin toteutus
 def pelaa(lista, pelaaja):
 
     while True:
@@ -27,14 +30,17 @@ def pelaa(lista, pelaaja):
             print("- Ei esineitä")
 
         print('\nValitse vaihtoehto: ')
-        print('liiku, poimi esine, tavarat, valikko')
+        print('liiku, poimi, tavarat, valikko')
         valinta = input('> ').strip().lower()
         lista.append(valinta)
 
         match valinta:
             case 'liiku':
-                pelaaja.liiku(pelaaja.huone.seuraava)
-            case 'poimi esine':
+                if pelaaja.huone.seuraava is None:
+                    print("Tämä on viimeinen paikka.")
+                else:
+                    pelaaja.liiku(pelaaja.huone.seuraava)
+            case 'poimi':
                 if pelaaja.huone.esineet:
                     pelaaja.keraaEsine(pelaaja.huone.esineet[0])
                 else:
@@ -80,14 +86,23 @@ def lataaTallennus(pelaaja, huoneet):
                 pelaaja.tavarat.append(esine)
                 break    
 
-def tulokset(lista):
+def historia(lista):
     print(lista)
     return
 
-def asetukset():
-    # reset game
-    print('Työn alla')
-    return
+def asetukset(pelaaja, huoneet, esineet):
+    while True:
+        print("Valitse vaihtoehto: \nnollaa peli, valikko")
+        match input("> ").strip().lower():
+            case "nollaa peli":
+                for huone, esine in zip(huoneet, esineet):
+                    huone.esineet = [esine]
+                pelaaja.tavarat = []
+                pelaaja.huone = huoneet[0]
+                print("Peli nollattu.")
+                break
+            case "valikko":
+                break
 
 def lopeta():
     sys.exit()

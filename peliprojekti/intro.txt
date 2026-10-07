@@ -6,6 +6,6 @@
 ::                                                               ::
 ::  Onnea matkaan!                                               ::
 ::                                                               ::
-::  (Paina mitä tahansa nappia jatkaaksesi)                      ::
+::  (Paina enter jatkaaksesi)                                    ::
 ::                                                               ::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

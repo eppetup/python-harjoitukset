@@ -8,12 +8,9 @@ class Pelaaja:
         self.huone = huone
   
     def keraaEsine(self, esine):
-        if esine in self.huone.esineet:
-            self.tavarat.append(esine)
-            self.huone.esineet.remove(esine)
-            print(f"Keräsit esineen: {esine.nimi}")
-        else:
-            print(f"Esine {esine.nimi} ei ole tässä huoneessa.")
+        self.tavarat.append(esine)
+        self.huone.esineet.remove(esine)
+        print(f"Keräsit esineen: {esine.nimi}")
     
     def tulostaTavarat(self):
         print("Laukussa on: ")
@@ -30,3 +27,5 @@ class Esine:
     def __init__ (self, nimi, paino):
         self.nimi = nimi
         self.paino = paino
+
+    

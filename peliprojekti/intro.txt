@@ -2,7 +2,8 @@
 ::                                                               ::
 ::  Hei. Tämä on peli, jossa seikkaillaan huoneissa.             ::
 ::                                                               ::
-::  Huoneissa on erilaisia tavaroita, joita voi ottaa mukaasi.   ::
+::  Huoneissa on erilaisia esineitä, jotka sinun tulee           ::
+::  lajitella oikein                                             ::
 ::                                                               ::
 ::  Onnea matkaan!                                               ::
 ::                                                               ::

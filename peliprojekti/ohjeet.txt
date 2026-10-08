@@ -10,12 +10,16 @@ tulokset: tulostaa käyttäjän syöttämät toiminnot
 asetukset: pelin asetukset  
 lopeta: lopettaa pelin  
  
-Pelissä kerätään tavaroita huoneista. 
-Pelin toimintoja ovat "liiku", "poimi", "tavarat", "valikko"
+Pelaaminen:
 
-liiku: liiku seuraavaan huoneeseen
-poimi: poimi huoneesta esine
-tavarat: tulosta laukun sisältö
+Pelissä kerätään tavaroita huoneista ja lajitellaan ne oikeaan roskakoriin.
+Pelin toimintoja ovat "liiku", "poimi", "pisteet", "valikko"
+
+liiku: liiku seuraavaan huoneeseen (jos et nosta tavaraa, et saa pisteitä huoneesta)
+poimi: poimi huoneesta esine ja lajittele se (muovi, bio, metalli, sekajäte)
+pisteet: näytä pisteet
 valikko: palaa päävalikkoon
+
+
 
 Paina enter jatkaaksesi.

@@ -30,14 +30,18 @@ def pelaa(lista, pelaaja):
             print("- Ei esineitä")
 
         print('\nValitse vaihtoehto: ')
-        print('liiku, poimi, tavarat, valikko')
+        print('liiku, poimi, pisteet, valikko')
         valinta = input('> ').strip().lower()
         lista.append(valinta)
 
         match valinta:
             case 'liiku':
                 if pelaaja.huone.seuraava is None:
-                    print("Tämä on viimeinen paikka.")
+                    print("Tämä on viimeinen huone.")
+                    print(f"Pelin pisteet: {pelaaja.pisteet}")
+                    print("Kiitos pelaamisesta! Paina enter jatkaaksesi")
+                    input()
+                    return
                 else:
                     pelaaja.liiku(pelaaja.huone.seuraava)
             case 'poimi':
@@ -45,8 +49,8 @@ def pelaa(lista, pelaaja):
                     pelaaja.keraaEsine(pelaaja.huone.esineet[0])
                 else:
                     print("Huoneessa ei ole esineitä!")
-            case 'tavarat':
-                pelaaja.tulostaTavarat()
+            case 'pisteet':
+                pelaaja.tulostaPisteet()
             case 'valikko':
                 return
 
@@ -55,15 +59,19 @@ def tallenna(pelaaja):
     with open("tallennus.txt", 'w') as tiedosto:
         tiedosto.write(pelaaja.nimi + '\n')
         tiedosto.write(pelaaja.huone.nimi + "\n")
+        tiedosto.write(str(pelaaja.pisteet) + "\n")
         tavarat = "\n".join([e.nimi for e in pelaaja.tavarat])
         tiedosto.write(tavarat + '\n')
         print("Tallennettu tiedostoon tallennus.txt")
 
+# kokeillaan ladata tallennus
+# 
 def lataaTallennus(pelaaja, huoneet):
     try:
         with open("tallennus.txt", 'r') as tiedosto:
             rivit = [rivi.strip() for rivi in tiedosto.readlines()]
     except FileNotFoundError:
+        # jos ei löydy tiedostoa, ei tehdä mitään
         return
 
     if rivit[0] != pelaaja.nimi:
@@ -71,12 +79,14 @@ def lataaTallennus(pelaaja, huoneet):
     
     print(f"Tervetuloa takaisin {pelaaja.nimi}")
 
-    for huone in huoneet:
-        if huone.nimi == rivit[1]:
-            pelaaja.huone = huone
+    for x in huoneet:
+        if x.nimi == rivit[1]:
+            pelaaja.huone = x
             break
+        
+    pelaaja.pisteet = int(rivit[2])
 
-    for tavara in rivit[2:]:
+    for tavara in rivit[3:]:
         if not tavara:
             continue
         for huone in huoneet:
@@ -98,6 +108,7 @@ def asetukset(pelaaja, huoneet, esineet):
                 for huone, esine in zip(huoneet, esineet):
                     huone.esineet = [esine]
                 pelaaja.tavarat = []
+                pelaaja.pisteet = 0
                 pelaaja.huone = huoneet[0]
                 print("Peli nollattu.")
                 break

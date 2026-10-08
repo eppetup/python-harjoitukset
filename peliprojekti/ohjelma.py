@@ -8,22 +8,22 @@ funktiot.tulostaOhjeet()
 input()
 
 # esineet
-vasara = luokat.Esine("Vasara", 4)
-banaani = luokat.Esine("Banaani", 1)
-kirja = luokat.Esine("Kirja", 1)
-lappu = luokat.Esine("Lappu", 1)
+muoviroska = luokat.Esine("Muoviroska", "muovi")
+banaani = luokat.Esine("Pilaantunut banaani", "bio")
+juoma = luokat.Esine("Tyhjä juomatölkki", "metalli")
+styroksi = luokat.Esine("Styroksinpala", "sekajäte")
 
 # paikat
-huone1 = luokat.Huone("kellari", vasara)
-huone2 = luokat.Huone("olohuone", kirja)
+huone1 = luokat.Huone("kellari", muoviroska)
+huone2 = luokat.Huone("olohuone", juoma)
 huone3 = luokat.Huone("keittiö", banaani)
-huone4 = luokat.Huone("eteinen", lappu)
+huone4 = luokat.Huone("eteinen", styroksi)
 
 huone1.seuraava = huone2
 huone2.seuraava = huone3
 huone3.seuraava = huone4
 
-esineet = [vasara, banaani, kirja, lappu]
+esineet = [muoviroska, banaani, juoma, styroksi]
 huoneet = [huone1, huone2, huone3, huone4]
 
 nimi = input('Pelaajan nimi > ')

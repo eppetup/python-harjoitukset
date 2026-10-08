@@ -7,7 +7,7 @@ Päävalikon toimintoja ovat "pelaa", "tallenna", "historia", "asetukset" ja "lo
 pelaa: käynnistää pelin  
 tallenna: tallentaa pelin tilanteen  
 tulokset: tulostaa käyttäjän syöttämät toiminnot  
-asetukset: pelin asetukset  
+asetukset: pelin asetukset
 lopeta: lopettaa pelin  
  
 Pelaaminen:

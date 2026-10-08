@@ -44,6 +44,15 @@ funktiot.py: ohjelmassa käytettävät funktiot:
     lopeta()
 
 luokat.py: ohjelmassa käytettävät luokat
+    Pelaaja
+    Huone
+    Esine
+
+
+tunnetut ongelmat:
+- vain yhden ihmisen peli voidaan tallentaa
+- virheellinen syöte voi kaataa ohjelman
+
 
     
 
